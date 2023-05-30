@@ -1,0 +1,11 @@
+header>div img{
+    width: 250px;
+}
+header nav{
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width:100%;
+    margin-left: 0;
+    font-size: 1.5em;
+}
