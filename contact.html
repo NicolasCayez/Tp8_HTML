@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope&ampdisplay=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <title>Filmographie de Tim Burton</title>
 </head>
 <body>
@@ -32,57 +32,57 @@
     </header>
 
     <div id="formulaire">
-
         <form method="POST" class="cadre">
-            <fieldset id="leavecomment">
-            <legend>Laisser un commentaire</legend>
-            <div>
-                <input type="text" placeholder="Pseudo *" minlenght="2" maxlenght="10" required>
-                <input type="number" placeholder="Âge *" required>
-            </div>
-            <div>
-                <input type="email" placeholder="Adresse E-Mail *" required>
-            </div>
-            <div>
-                <input type="text" placeholder="Description personnelle" maxlength="35">
-            </div>
-            <div>
-                <label for="film">Quel film est concerné par votre commentaire ? *</label><br>
-                <select name="film" id="film" required>
-                    <option value="option1">Beetlejuice</option>
-                    <option value="option2">Batman</option>
-                    <option value="option3">Edward aux mains d'argent</option>
-                    <option value="option4">Mars Attacks!</option>
-                    <option value="option5">Sleepy Hollow</option>
-                    <option value="option6">La Planète des singes</option>
-                    <option value="option7">Big Fish</option>
-                    <option value="option8">Charlie et la Chocolaterie</option>
-                    <option value="option9">Les Noces funèbres</option>
-                    <option value="option10">Sweeney Todd</option>
-                </select>
-            </div>
-            <div>
-                <label for="comment">Votre commentaire: *</label><br>
-                <textarea name="comment" id="comment" cols="70" rows="10" placeholder="..........!!!" maxlenght="280" required></textarea>
-            </div>
-        </fieldset>
-        <fieldset id="plusloin">
-            <legend>Pour aller plus loin...</legend>
-            <div>
-                <label>Que recherchez-vous sur le site ?</label><br>
-                <input type="radio" name="radio" id="infos"><label for="infos">S'informer sur les films</label>
-                <input type="radio" name="radio" id="echanges"><label for="echanges">Échanger sur les films</label>
-                <input type="radio" name="radio" id="rencontres"><label for="rencontres">Rencontrer des fans</label>
-            </div>
-            <div>
-                <label for="avis">Un avis, une idée à partager ?</label><br>
-                <textarea name="avis" id="avis" cols="70" rows="5"></textarea>
-            </div>
-        </fieldset>
-        <button id="bouton">Envoyer</button>
-        <button id="bouton">Reset</button>
-    </form>
-</div>
+            <h1>Formulaire de commentaire</h1>
+            <fieldset>
+                <legend>Laisser un commentaire</legend>
+                <div>
+                    <input type="text" name="pseudo" placeholder="Pseudo *" maxlength="10" required>
+                    <input type="number" name="age" placeholder="Âge *" required>
+                </div>
+                <div>
+                    <input type="email" name="email" placeholder="Adresse E-Mail *" required>
+                </div>
+                <div>
+                    <input type="text" name="description" placeholder="Description personnelle" maxlength="35">
+                </div>
+                <div>
+                    <label for="film">Quel film est concerné par votre commentaire ? *</label><br>
+                    <select name="film" id="film" required>
+                        <option value="">Beetlejuice</option>
+                        <option value="option2">Batman</option>
+                        <option value="option3">Edward aux mains d'argent</option>
+                        <option value="option4">Mars Attacks!</option>
+                        <option value="option5">Sleepy Hollow</option>
+                        <option value="option6">La Planète des singes</option>
+                        <option value="option7">Big Fish</option>
+                        <option value="option8">Charlie et la Chocolaterie</option>
+                        <option value="option9">Les Noces funèbres</option>
+                        <option value="option10">Sweeney Todd</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="comment">Votre commentaire: *</label><br>
+                    <textarea name="comment" id="comment" cols="70" rows="10" placeholder="..........!!!" maxlength="280" required></textarea>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Pour aller plus loin...</legend>
+                <div>
+                    <label>Que recherchez-vous sur le site ?</label><br>
+                    <input type="radio" name="radio" id="infos"><label for="infos">S'informer sur les films</label>
+                    <input type="radio" name="radio" id="echanges"><label for="echanges">Échanger sur les films</label>
+                    <input type="radio" name="radio" id="rencontres"><label for="rencontres">Rencontrer des fans</label>
+                </div>
+                <div>
+                    <label for="avis">Un avis, une idée à partager ?</label><br>
+                    <textarea name="avis" id="avis" cols="70" rows="5" placeholder="..........!!!"></textarea>
+                </div>
+            </fieldset>
+            <button class="bouton">Envoyer</button>
+            <button class="bouton">Recommencer</button>
+        </form>
+    </div>
 
     <footer>
         <div>
