@@ -1,0 +1,54 @@
+0 thème
+
+cinéma
+filmo Tim Burton
+    1988 : Beetlejuice
+    2024 : Beetlejuice 2
+
+    1989 : Batman
+    1992 : Batman : Le Défi (Batman Returns)
+
+    1990 : Edward aux mains d'argent (Edward Scissorhands)
+    1996 : Mars Attacks!
+    1999 : Sleepy Hollow : La Légende du cavalier sans tête (Sleepy Hollow)
+    2001 : La Planète des singes (Planet of the Apes)
+    2003 : Big Fish
+    2005 : Charlie et la Chocolaterie (Charlie and the Chocolate Factory)
+    2005 : Les Noces funèbres (Corpse Bride), coréalisé avec Mike Johnson
+    2007 : Sweeney Todd : Le Diabolique Barbier de Fleet Street (Sweeney Todd : The Demon Barber of Fleet Street)
+
+
+
+------------------------------------
+1 charte graphique
+LOGO initiales TP
+TYPO "manrope" au debut a changer au besoin
+COULEURS type halloween
+
+
+---------------------------------
+2 maquettage plus petit et plus grand 1080px
+
+index : présentation 
+contact : créer un compte pour pouvoir commenter le blog
+
+-----------------------------
+3 répartition:
+
+Alicia : galerie
+Coralie : formulaire responsive
+Alexandre : blog
+Nicolas : index
+
+dans index -> header footer 
+contact -> Formulaire
+blog -> articles sur film avec lien bande annonce youtube
+galerie -> affiches films
+---------------------------
+Pages du site :
+
+- Accueil "index"
+- Formulaire "contact"
+- page contenu articles "blog"
+- galerie images "portfolio"
+

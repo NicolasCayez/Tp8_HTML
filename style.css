@@ -1,0 +1,32 @@
+body{
+    font-family: 'Manrope', sans-serif;
+}
+
+header{
+    display: flex;
+    background-color: darkorange;
+
+}
+header nav{
+    flex-direction: column;
+}
+header img{
+    width: 100px;
+}
+
+footer{
+    background-color: darkorange;
+    position:sticky;
+    bottom: 0;
+
+}
+
+@media screen and (min-width: 1080px){
+    header img{
+        width: 250px;
+    }
+    header nav{
+        flex-direction: row;
+    }
+    
+}
