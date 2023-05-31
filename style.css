@@ -106,10 +106,6 @@ footer>div{
 
 /* Configuration contenu de la page filmographie */
 /* avec deux colonnes pour la navigation et le contenu */
-.titreBlog{
-
-}
-
 .cadre h3, .cadre iframe, .cadre p, .cadre h4, .cadre ul {
     grid-column: 1 /span 2;
     padding: 10px 30px;
@@ -145,8 +141,13 @@ footer>div{
     left:-35px;
     font-size: 0.8em;
 }
+/* colonne de gauche le titre */
+.container .titreBlog{
+    grid-column: 1 /span2;
+    justify-self: center;
+}
 
-/* Colonne de gauche le contenu dans une section */
+/* Colonne de droitegauche le contenu dans une section */
 .container section{
     grid-column: 2;
 }

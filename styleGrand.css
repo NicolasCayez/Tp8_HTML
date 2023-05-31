@@ -25,6 +25,9 @@ header nav{
 }
 
 /* Page filmographie */
+.container .titreBlog{
+    grid-column: 2;
+}
 
 .sectionBlog {
     display: flex;
