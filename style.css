@@ -5,7 +5,9 @@
     url("BurtonsDreamsPro-R1rE.ttf") format("truetype");
 }
 body{
-    font-family: Burton;
+    /* font-family: Burton; */
+    /* font-family: 'curlz-mt-regular', sans-serif; */
+    /* font-family: 'Franklin Gothic Medium', sans-serif; */
 }
 
 /* Couleurs de fond*/
@@ -29,6 +31,8 @@ header{
     display: grid;
     grid-template-columns: 100px 1fr;
     height: 80px;
+    position: relative;
+    z-index: 1;
 }
 header>div{
     align-self: center;
@@ -55,6 +59,7 @@ footer{
     bottom: 0px;
     justify-content: center;
     height : 60px;
+    width: 100%;
     font-size: 0.8em;
 }
 footer>div{
@@ -72,14 +77,14 @@ footer>div{
     box-shadow: 5px 5px 5px black;
     margin: 30px;
 }
-.cadre p{
+/* .cadre p{
     grid-column: 2;
     grid-row: 2;
 }
 .cadre h3{
     grid-column: 2;
     grid-row: 1;
-}
+} */
 
 /* Configuration contenu de l'accueil */
 #presentationTB{
@@ -100,25 +105,47 @@ footer>div{
 
 /* Configuration contenu de la page filmographie */
 /* avec deux colonnes pour la navigation et le contenu */
+
+section h1 {
+    text-align: center;
+}
+
+.cadre h3, .cadre iframe, .cadre p, .cadre h4, .cadre ul {
+    grid-column: 1 /span 2;
+    padding: 10px 30px;
+    margin: auto;
+}
+
 .cadre iframe{
-    grid-column: 1;
-    grid-row: 1 /span 2;
-    padding : 15px;
+    /* grid-column: 1;
+    grid-row: 1 /span 2; */
     height: 300;
     width: 400px;
 }
+
+
 .container{
     display: grid;
-    grid-template-columns: 250px 1fr;
+    grid-template-columns: 200px 1fr;
 }
 /* Colonne de gauche le menu */
 .container nav{
     grid-column: 1;
     position: fixed;
-    width: 250px;
+    z-index: 0;
+    top: 0;
+    padding-top: 60px;
+    width: 200px;
     height: 100%;
     background-color: darkorange;
 }
+
+.container nav ul{
+    position: relative;
+    left:-35px;
+    font-size: 0.8em;
+}
+
 /* Colonne de gauche le contenu dans une section */
 .container section{
     grid-column: 2;
@@ -137,3 +164,12 @@ form{
 }
 /* les zones de texte s'étendent pour prendre toute le largeur */
 textarea{width: 100%;}
+
+@media screen and (max-width: 1080px){
+    .container nav{
+        display: none;
+    }
+    .container section{
+        grid-column: 1 /span 2;
+    }
+}
