@@ -161,6 +161,7 @@ section h1 {
 .containerAffiche{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
  }
  .containerAffiche div{
      width: 300px;
