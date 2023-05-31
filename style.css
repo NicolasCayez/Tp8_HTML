@@ -88,13 +88,14 @@ footer>div{
 
 /* Configuration contenu de l'accueil */
 #presentationTB{
-    display: flex;
+    display: block;
 }
 
 #presentationTB img{
     width: 150px;
     height: 200px;
-    margin: 10px 20px 0px 5px;
+    margin: 0px 20px 0px 5px;
+    float: inline-start;
 }
 
 #presentationTB p{
