@@ -19,3 +19,19 @@ header nav{
     width: 200px;
     height: 300px;
 }
+
+/* Page filmographie */
+
+.sectionBlog {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.sectionBlog article {
+    max-width: 500px;
+}
+
+.sectionBlog article h3 {
+    height: 20px;
+}
