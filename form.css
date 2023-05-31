@@ -1,0 +1,184 @@
+/* Intégration police d'écriture sur toute la page */
+@font-face {
+    font-family: "Burton";
+    src: local("Burton"),
+    url("BurtonsDreamsPro-R1rE.ttf") format("truetype");
+}
+body{
+    font-family: Burton;
+}
+
+/* Couleurs de fond*/
+header, footer{
+    background-color: darkorange;
+}
+
+/* marges de la page à 0 pour enlever le trait blanc sur les côtés */
+body, header, footer{
+    margin: 0%;
+}
+
+/* les listes sans puces */
+ul{
+    list-style-type: none;
+}
+
+/* Configuration du header en grid de deux colonnes*/
+/* la navigation est collée à l'image et en menu vertical */
+header{
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    height: 80px;
+}
+header>div{
+    align-self: center;
+}
+header>div img{
+    width: 100px;
+    margin-left: 10px;
+}
+header nav{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-decoration: none;
+    margin-left: 10%;
+    font-size: 0.8em;
+}
+
+/* configuration du footer, texte centré ave crappel des liens */
+footer{
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 2;
+    position:sticky;
+    bottom: 0px;
+    justify-content: center;
+    height : 60px;
+    font-size: 0.8em;
+}
+footer>div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* confiduration des cadres des différentes pages */
+.cadre{
+    display:grid;
+    grid-template-columns: repeat (1fr 1fr);
+    border: solid 1px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px black;
+    margin: 30px;
+}
+.cadre p{
+    grid-column: 2;
+    grid-row: 2;
+}
+.cadre h3{
+    grid-column: 2;
+    grid-row: 1;
+}
+
+/* Configuration contenu de l'accueil */
+#presentationTB{
+    display: flex;
+}
+
+#presentationTB img{
+    width: 150px;
+    height: 200px;
+    margin: 10px 20px 0px 5px;
+}
+
+#presentationTB p{
+    width: 1fr;
+    text-justify:auto;
+    font-size: 1.2em;
+}
+
+/* Configuration contenu de la page filmographie */
+/* avec deux colonnes pour la navigation et le contenu */
+.cadre iframe{
+    grid-column: 1;
+    grid-row: 1 /span 2;
+    padding : 15px;
+    height: 300;
+    width: 400px;
+}
+.container{
+    display: grid;
+    grid-template-columns: 250px 1fr;
+}
+/* Colonne de gauche le menu */
+.container nav{
+    grid-column: 1;
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    background-color: darkorange;
+}
+/* Colonne de gauche le contenu dans une section */
+.container section{
+    grid-column: 2;
+}
+
+
+/* Configuration contenu de la page contact */
+/* Le formulaire centré */
+#formulaire{
+    display: flex;
+    justify-content: center;
+}
+/* CSS des zones de texte */
+textarea{
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Fond du formulaire */
+form{
+    background-image: linear-gradient(40deg, rgb(204, 112, 0), rgb(255, 204, 109));
+}
+
+/* Aligmement du titre du formulaire */
+.titreform{
+    text-align: center;
+}
+
+/* CSS des boutons d'envoi et de reset */
+.bouton{
+    justify-self: center;
+    width: 140px;
+    height: 40px;
+    margin: 5px;
+    border-radius: 30px;
+    border: 1px solid;
+    background-color: darkorange;
+}
+.bouton:hover{
+    background-color: black;
+    color: darkorange
+}
+
+/* Arrondi des deux champs */
+fieldset{
+    border-radius: 10px;
+    border: 1px solid;
+}
+
+/* Arrondi des input + agrandissement */
+.case{
+    border-radius: 5px;
+    border: 1px solid;
+    width: 200px;
+    height: 20px;
+    margin-top: 5px;
+}
+#film{
+    border-radius: 5px;
+    border: 1px solid;
+    width: 206px;
+    height: 20px;
+}
