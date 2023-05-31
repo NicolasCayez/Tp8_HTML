@@ -101,8 +101,13 @@ footer h3{
 } */
 
 /* Configuration contenu de l'accueil */
+.titreAccueil{
+    margin-left: 10px;
+}
+
 #presentationTB{
-    display: block;
+    height:100vh;
+    margin: 10px;
 }
 
 #presentationTB img{

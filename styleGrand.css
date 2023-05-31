@@ -13,6 +13,15 @@ header nav{
     margin-left: 0;
     font-size: 1.5em;
 }
+
+.titreAccueil{
+    margin-left: 50px;
+}
+
+#presentationTB{
+    margin: 50px;
+}
+
 /* Pages affiches */
 .h1portfolio{
     text-align: center;
