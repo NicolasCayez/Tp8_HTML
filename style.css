@@ -106,9 +106,8 @@ footer>div{
 
 /* Configuration contenu de la page filmographie */
 /* avec deux colonnes pour la navigation et le contenu */
+.titreBlog{
 
-section h1 {
-    text-align: center;
 }
 
 .cadre h3, .cadre iframe, .cadre p, .cadre h4, .cadre ul {
@@ -135,7 +134,7 @@ section h1 {
     position: fixed;
     z-index: 0;
     top: 0;
-    padding-top: 60px;
+    padding-top: 100px;
     width: 200px;
     height: 100%;
     background-color: darkorange;

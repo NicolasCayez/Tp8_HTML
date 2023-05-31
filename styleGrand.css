@@ -1,9 +1,13 @@
+header{
+    height:100px;
+}
+
 header>div img{
-    width: 250px;
+    width: 150%;
 }
 header nav{
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     width:100%;
     margin-left: 0;
