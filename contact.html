@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope&ampdisplay=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="form.css">
     <title>Filmographie de Tim Burton</title>
 </head>
 <body>
@@ -33,21 +33,21 @@
 
     <div id="formulaire">
         <form method="POST" class="cadre">
-            <h1>Formulaire de commentaire</h1>
+            <h1 class="titreform">Formulaire de commentaire</h1>
             <fieldset>
                 <legend>Laisser un commentaire</legend>
                 <div>
-                    <input type="text" name="pseudo" placeholder="Pseudo *" maxlength="10" required>
-                    <input type="number" name="age" placeholder="Âge *" required>
+                    <input type="text" name="pseudo" placeholder="Pseudo *" maxlength="10" required class="case">
+                    <input type="number" name="age" placeholder="Âge *" required class="case">
                 </div>
                 <div>
-                    <input type="email" name="email" placeholder="Adresse E-Mail *" required>
+                    <input type="email" name="email" placeholder="Adresse E-Mail *" required class="case">
                 </div>
                 <div>
-                    <input type="text" name="description" placeholder="Description personnelle" maxlength="35">
+                    <input type="text" name="description" placeholder="Description personnelle" maxlength="35" class="case">
                 </div>
                 <div>
-                    <label for="film">Quel film est concerné par votre commentaire ? *</label><br>
+                    <label for="film">Quel film est concerne par votre commentaire ? *</label><br>
                     <select name="film" id="film" required>
                         <option value="">Beetlejuice</option>
                         <option value="option2">Batman</option>
@@ -71,11 +71,11 @@
                 <div>
                     <label>Que recherchez-vous sur le site ?</label><br>
                     <input type="radio" name="radio" id="infos"><label for="infos">S'informer sur les films</label>
-                    <input type="radio" name="radio" id="echanges"><label for="echanges">Échanger sur les films</label>
+                    <input type="radio" name="radio" id="echanges"><label for="echanges">Echanger sur les films</label>
                     <input type="radio" name="radio" id="rencontres"><label for="rencontres">Rencontrer des fans</label>
                 </div>
                 <div>
-                    <label for="avis">Un avis, une idée à partager ?</label><br>
+                    <label for="avis">Un avis, une idee a partager ?</label><br>
                     <textarea name="avis" id="avis" cols="70" rows="5" placeholder="..........!!!"></textarea>
                 </div>
             </fieldset>
@@ -91,7 +91,7 @@
             <a href="portfolio.html">Les affiches</a>
             <a href="contact.html">Compte</a>
         </div>
-        <h3>Site réalisé par Alicia, Coralie, Alexandre et Nicolas</h3>
+        <h3>Site realise par Alicia, Coralie, Alexandre et Nicolas</h3>
     </footer>
 </body>
 </html>
