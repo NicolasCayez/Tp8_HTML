@@ -15,13 +15,15 @@ body{
 }
 
 .fondPage{
-    position:absolute;
+    position:fixed;
     z-index: -1;
     width:100%;
     height:100%;
     background: url(images/Spirale.jpg);
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
+    opacity: 25%;
 }
 
 
