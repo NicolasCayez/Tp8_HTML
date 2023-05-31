@@ -25,6 +25,12 @@ ul{
     list-style-type: none;
 }
 
+/* aspect des liens */
+a{
+    text-decoration: none;
+    font-weight: 700;
+}
+
 /* Configuration du header en grid de deux colonnes*/
 /* la navigation est collée à l'image et en menu vertical */
 header{
@@ -52,20 +58,28 @@ header nav{
 
 /* configuration du footer, texte centré ave crappel des liens */
 footer{
-    display: grid;
-    grid-template-columns: 1;
-    grid-template-rows: 2;
+    display: flex;
+    flex-direction: column;
+    /* grid-template-columns: 1;
+    grid-template-rows: 2; */
     position:sticky;
     bottom: 0px;
     justify-content: center;
     height : 60px;
     width: 100%;
-    font-size: 0.8em;
+    font-size: 1.2em;
 }
 footer>div{
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+}
+
+footer h3{
+    margin: 0;
+    font-size: 0.8em;
+    text-align: center;
 }
 
 /* confiduration des cadres des différentes pages */
@@ -131,7 +145,7 @@ footer>div{
     z-index: 0;
     top: 0;
     padding-top: 100px;
-    width: 200px;
+    width: 230px;
     height: 100%;
     background-color: darkorange;
 }
@@ -139,7 +153,11 @@ footer>div{
 .container nav ul{
     position: relative;
     left:-35px;
-    font-size: 0.8em;
+    font-size: 1em;
+}
+
+.container nav ul li{
+    margin: 20px 0;
 }
 /* colonne de gauche le titre */
 .container .titreBlog{
