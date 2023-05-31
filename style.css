@@ -8,7 +8,22 @@ body{
     /* font-family: Burton; */
     /* font-family: 'curlz-mt-regular', sans-serif; */
     /* font-family: 'Franklin Gothic Medium', sans-serif; */
+    /* background: url(images/Spirale.jpg);
+    background-position: center;
+    background-size: cover; */
+
 }
+
+.fondPage{
+    position:absolute;
+    z-index: -1;
+    width:100%;
+    height:100%;
+    background: url(images/Spirale.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
 
 /* Couleurs de fond*/
 header, footer{
