@@ -18,7 +18,7 @@
         <div>
             <img src="images/LogoBlanc.png" alt="logo">
         </div>
-        <!-- liens de navigation -->
+        <!-- Liens de navigation -->
         <nav>
             <div>
                 <a href="index.html">Accueil</a>
@@ -34,11 +34,14 @@
             </div>
         </nav>
     </header>
+    <!-- Formulaire -->
     <div id="formulaire">
         <form method="POST" class="cadre">
             <h1 class="titreform">Formulaire de commentaire</h1>
+            <!-- Premier champ -->
             <fieldset>
                 <legend>Laisser un commentaire</legend>
+                <!-- Informations principales -->
                 <div>
                     <input type="text" name="pseudo" placeholder="Pseudo *" maxlength="10" required class="case">
                     <input type="number" name="age" placeholder="Âge *" required class="case">
@@ -46,6 +49,7 @@
                 <div>
                     <input type="email" name="email" placeholder="Adresse E-Mail *" required class="case">
                 </div>
+                <!-- Informations secondaires -->
                 <div>
                     <input type="text" name="description" placeholder="Description personnelle" maxlength="35" class="case">
                 </div>
@@ -69,6 +73,7 @@
                     <textarea name="comment" id="comment" cols="70" rows="10" placeholder="..........!!!" maxlength="280" required></textarea>
                 </div>
             </fieldset>
+            <!-- Deuxième champ (infos optionnelles) -->
             <fieldset>
                 <legend>Pour aller plus loin...</legend>
                 <div>
@@ -82,12 +87,14 @@
                     <textarea name="avis" id="avis" cols="70" rows="5" placeholder="..........!!!"></textarea>
                 </div>
             </fieldset>
+            <!-- Boutons d'envoi et de reset -->
             <button class="bouton">Envoyer</button>
             <button class="bouton">Recommencer</button>
         </form>
     </div>
 
     <footer>
+        <!-- Barre de navigation "bas" -->
         <div>
             <a href="index.html">Accueil</a>
             <a href="blog.html">Filmographie principale</a>
