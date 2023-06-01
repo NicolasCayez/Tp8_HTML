@@ -11,7 +11,6 @@ body{
     /* background: url(images/Spirale.jpg);
     background-position: center;
     background-size: cover; */
-
 }
 
 .fondPage{
@@ -97,14 +96,9 @@ footer{
     font-size: 1.2em;
 }
 footer>div{
-    /* width: 100%; */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    /* flex-direction: row;
-    align-self: center; */
-    justify-self: space-around;
-    /* padding: 0 15%; */
     padding-left: 10%;
     padding-right: 10%;
 }
@@ -118,23 +112,13 @@ footer h3{
 /* confiduration des cadres des différentes pages */
 .cadre{
     display:grid;
-    grid-template-columns: repeat (1fr 1fr);
     border: solid 1px;
     border-radius: 10px;
     box-shadow: 5px 5px 5px black;
     margin: 30px;
     background-image: linear-gradient(40deg, rgba(96, 66, 151, 0.774), rgba(91, 109, 212, 0.774));
     color: white;
-
 }
-/* .cadre p{
-    grid-column: 2;
-    grid-row: 2;
-}
-.cadre h3{
-    grid-column: 2;
-    grid-row: 1;
-} */
 
 /* Configuration contenu de l'accueil */
 .titreAccueil{
@@ -154,7 +138,6 @@ footer h3{
 }
 
 #presentationTB p{
-    width: 1fr;
     text-justify:auto;
     font-size: 1.2em;
 }
@@ -170,7 +153,7 @@ footer h3{
 .cadre iframe{
     /* grid-column: 1;
     grid-row: 1 /span 2; */
-    height: 300;
+    height: 300px;
     width: 400px;
 }
 
