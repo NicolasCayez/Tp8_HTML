@@ -29,10 +29,10 @@ body{
 
 /* Couleurs de fond*/
 header{
-    background-image: linear-gradient(40deg, rgb(204, 112, 0), rgb(255, 204, 109));
+    background-image: linear-gradient(40deg, rgb(47, 2, 88), rgb(192, 101, 253));
 }
 footer{
-    background-image: linear-gradient(40deg, rgb(255, 204, 109), rgb(204, 112, 0));
+    background-image: linear-gradient(40deg, rgb(192, 101, 253), rgb(47, 2, 88));
 }
 
 /* marges de la page à 0 pour enlever le trait blanc sur les côtés */
@@ -49,6 +49,14 @@ ul{
 a{
     text-decoration: none;
     font-weight: 700;
+}
+
+a, a:visited{
+    color:rgba(255, 255, 255, 1);
+}
+
+a:hover{
+    color:rgba(255, 255, 255, 0.7);
 }
 
 /* Configuration du header en grid de deux colonnes*/
@@ -115,7 +123,7 @@ footer h3{
     border-radius: 10px;
     box-shadow: 5px 5px 5px black;
     margin: 30px;
-    background-image: linear-gradient(40deg, rgb(204, 112, 0), rgb(255, 204, 109));
+    background-image: linear-gradient(40deg, rgba(204, 112, 0, 0.74), rgb(255, 204, 109));
 
 }
 /* .cadre p{
@@ -141,7 +149,7 @@ footer h3{
     width: 150px;
     height: 200px;
     margin: 0px 20px 0px 5px;
-    float: inline-start;
+    float: left;
 }
 
 #presentationTB p{
@@ -179,7 +187,7 @@ footer h3{
     padding-top: 100px;
     width: 230px;
     height: 100%;
-    background-image: linear-gradient(to bottom, rgb(204, 112, 0), rgb(255, 204, 109));
+    background-image: linear-gradient(to bottom, rgb(47, 2, 88), rgb(192, 101, 253));
 }
 
 .container nav ul{
@@ -190,6 +198,10 @@ footer h3{
 
 .container nav ul li{
     margin: 20px 0;
+}
+
+h2{
+    color:white;
 }
 /* colonne de gauche le titre */
 .container .titreBlog{
@@ -263,11 +275,11 @@ form{
     margin: 5px;
     border-radius: 30px;
     border: 1px solid;
-    background-color: darkorange;
+    background-color: rgb(192, 101, 253);
 }
 .bouton:hover{
-    background-color: black;
-    color: darkorange
+    background-color: rgb(37, 37, 37);
+    color: rgb(192, 101, 253);
 }
 
 /* Arrondi des deux champs */
