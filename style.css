@@ -103,7 +103,6 @@ footer>div{
     justify-content: space-around;
     /* flex-direction: row;
     align-self: center; */
-    justify-self: space-around;
     /* padding: 0 15%; */
     padding-left: 10%;
     padding-right: 10%;
@@ -118,13 +117,12 @@ footer h3{
 /* confiduration des cadres des différentes pages */
 .cadre{
     display:grid;
-    grid-template-columns: repeat (1fr 1fr);
+    grid-template-columns: 1fr 1fr;
     border: solid 1px;
     border-radius: 10px;
     box-shadow: 5px 5px 5px black;
     margin: 30px;
     background-image: linear-gradient(40deg, rgba(204, 112, 0, 0.74), rgb(255, 204, 109));
-
 }
 /* .cadre p{
     grid-column: 2;
@@ -153,7 +151,6 @@ footer h3{
 }
 
 #presentationTB p{
-    width: 1fr;
     text-justify:auto;
     font-size: 1.2em;
 }
@@ -169,7 +166,7 @@ footer h3{
 .cadre iframe{
     /* grid-column: 1;
     grid-row: 1 /span 2; */
-    height: 300;
+    height: 300px;
     width: 400px;
 }
 
