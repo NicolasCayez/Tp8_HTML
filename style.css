@@ -1,18 +1,3 @@
-/* Intégration police d'écriture sur toute la page */
-@font-face {
-    font-family: "Burton";
-    src: local("Burton"),
-    url("BurtonsDreamsPro-R1rE.ttf") format("truetype");
-}
-body{
-    /* font-family: Burton; */
-    /* font-family: 'curlz-mt-regular', sans-serif; */
-    /* font-family: 'Franklin Gothic Medium', sans-serif; */
-    /* background: url(images/Spirale.jpg);
-    background-position: center;
-    background-size: cover; */
-}
-
 .fondPage{
     position:fixed;
     z-index: -1;
@@ -25,7 +10,6 @@ body{
     opacity: 25%;
 }
 
-
 /* Couleurs de fond*/
 header{
     background-image: linear-gradient(40deg, rgb(47, 2, 88), rgb(192, 101, 253));
@@ -33,7 +17,10 @@ header{
 footer{
     background-image: linear-gradient(40deg, rgb(192, 101, 253), rgb(47, 2, 88));
 }
-
+/*Ajout police d'écriture*/
+body{
+    font-family: 'Manrope', sans-serif;
+}
 /* marges de la page à 0 pour enlever le trait blanc sur les côtés */
 body, header, footer{
     margin: 0%;
@@ -88,7 +75,6 @@ header nav{
 footer{
     display: flex;
     flex-direction: column;
-    /* position:sticky; */
     bottom: 0px;
     justify-content: center;
     height : 60px;
@@ -151,12 +137,9 @@ footer h3{
 }
 
 .cadre iframe{
-    /* grid-column: 1;
-    grid-row: 1 /span 2; */
     height: 300px;
     width: 400px;
 }
-
 
 .container{
     display: grid;
@@ -187,13 +170,13 @@ footer h3{
 h2{
     color:white;
 }
-/* colonne de gauche le titre */
+/* colonne de droite le titre */
 .container .titreBlog{
     grid-column: 1 /span2;
     justify-self: center;
 }
 
-/* Colonne de droitegauche le contenu dans une section */
+/* Colonne de droite le contenu dans une section */
 .container section{
     grid-column: 2;
 }
@@ -204,25 +187,28 @@ h2{
     text-decoration: overline;
     text-decoration: underline;
 }
+/*Permettre aux images de s'aligner horizontalement en fonction de la taille des écrans*/
 .containerAffiche{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
- }
- .containerAffiche div{
-     width: 300px;
-     justify-items: center;
-     padding: 20px;
- }
- .containerAffiche h6{
-     overflow-wrap: break-word;
- }
-
+}
+/*Positionnement du contenu des div à l'intérieur de .containerAffiche */
+.containerAffiche div{
+    width: 300px;
+    justify-items: center;
+    padding: 20px;
+}
+/*Permettre un retour à la ligne des titres*/
+.containerAffiche h6{
+    overflow-wrap: break-word;
+}
+/*Définition de la taille des images*/
 .beetlejuice, .batman, .edward, .batman2, .attacks, .planete, .bigfish, .charlie, .noces, .sweeney, .beetlejuice2{
     width: 200px;
     height: 300px;
 }
-
+/*Alignement et taille des titres*/
 .h6{
     text-align: center;
     font-size: 1em;
