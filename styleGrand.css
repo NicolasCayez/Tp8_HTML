@@ -1,10 +1,15 @@
+/* CSS pour écran avec largeur supérieure ou égale à 1080px */
+
+/* header avec une hauteur moins grande */
 header{
     height:100px;
 }
 
+/* agrandissement logo */
 header>div img{
     width: 150%;
 }
+/* le menu passe en vertical plus petit , avec une légère marge entre le logo et le menu*/
 header nav{
     flex-direction: row;
     justify-content: space-evenly;
@@ -34,10 +39,11 @@ header nav{
 }
 
 /* Page filmographie */
+/* le contenu principal se décale d'une colonne pour laisse le sommaire prendre la première */
 .container .titreBlog{
     grid-column: 2;
 }
-
+/* les fiches film sont réparties dans l'affichage en flexbox avec une largeur maximum pour limiter l'étirement*/
 .sectionBlog {
     display: flex;
     flex-wrap: wrap;
