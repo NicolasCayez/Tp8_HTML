@@ -103,6 +103,7 @@ footer>div{
     justify-content: space-around;
     /* flex-direction: row;
     align-self: center; */
+    justify-self: space-around;
     /* padding: 0 15%; */
     padding-left: 10%;
     padding-right: 10%;
@@ -117,12 +118,14 @@ footer h3{
 /* confiduration des cadres des différentes pages */
 .cadre{
     display:grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat (1fr 1fr);
     border: solid 1px;
     border-radius: 10px;
     box-shadow: 5px 5px 5px black;
     margin: 30px;
-    background-image: linear-gradient(40deg, rgba(204, 112, 0, 0.74), rgb(255, 204, 109));
+    background-image: linear-gradient(40deg, rgba(96, 66, 151, 0.774), rgba(91, 109, 212, 0.774));
+    color: white;
+
 }
 /* .cadre p{
     grid-column: 2;
@@ -151,6 +154,7 @@ footer h3{
 }
 
 #presentationTB p{
+    width: 1fr;
     text-justify:auto;
     font-size: 1.2em;
 }
@@ -166,7 +170,7 @@ footer h3{
 .cadre iframe{
     /* grid-column: 1;
     grid-row: 1 /span 2; */
-    height: 300px;
+    height: 300;
     width: 400px;
 }
 
@@ -254,9 +258,8 @@ textarea{
     border-radius: 10px;
 }
 
-/* Fond du formulaire */
-form{
-    background-image: linear-gradient(40deg, rgb(204, 112, 0), rgb(255, 204, 109));
+span{
+    color: rgb(70, 36, 102);
 }
 
 /* Aligmement du titre du formulaire */
@@ -269,14 +272,17 @@ form{
     justify-self: center;
     width: 140px;
     height: 40px;
-    margin: 5px;
+    margin-bottom: 10px;
+    margin-top: 5px;
     border-radius: 30px;
     border: 1px solid;
-    background-color: rgb(192, 101, 253);
+    background-image: linear-gradient(-40deg, rgb(146, 75, 212), rgb(192, 101, 253));
+    color: white;
+    box-shadow: 5px 5px 5px rgb(75, 44, 75);
 }
 .bouton:hover{
-    background-color: rgb(37, 37, 37);
-    color: rgb(192, 101, 253);
+    background-image: linear-gradient(-40deg, rgb(239, 231, 243), rgb(255, 255, 255));
+    color: rgb(146, 75, 212);
 }
 
 /* Arrondi des deux champs */
