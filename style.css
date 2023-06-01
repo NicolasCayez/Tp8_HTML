@@ -54,7 +54,8 @@ header{
     display: grid;
     grid-template-columns: 100px 1fr;
     height: 80px;
-    position: relative;
+    position: sticky;
+    top: 0;
     z-index: 1;
 }
 header>div{
@@ -77,9 +78,7 @@ header nav{
 footer{
     display: flex;
     flex-direction: column;
-    /* grid-template-columns: 1;
-    grid-template-rows: 2; */
-    position:sticky;
+    /* position:sticky; */
     bottom: 0px;
     justify-content: center;
     height : 60px;
@@ -87,10 +86,16 @@ footer{
     font-size: 1.2em;
 }
 footer>div{
-    width: 100%;
+    /* width: 100%; */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    /* flex-direction: row;
+    align-self: center; */
+    justify-self: space-around;
+    /* padding: 0 15%; */
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 footer h3{
@@ -216,6 +221,7 @@ footer h3{
     width: 200px;
     height: 300px;
 }
+
 .h6{
     text-align: center;
     font-size: 1em;
